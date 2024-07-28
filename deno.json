@@ -1,0 +1,26 @@
+{
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v2.2.4/"
+  },
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "build": "deno task lume",
+    "serve": "deno task lume -s",
+    "dprint:fmt": "deno task dprint fmt",
+    "dprint:check": "deno task dprint check",
+    "dprint": "deno run -A npm:dprint@0.47.2",
+    "format": "deno fmt && deno task dprint:fmt"
+  },
+  "compilerOptions": {
+    "types": ["lume/types.ts"]
+  },
+  "lock": false,
+  "fmt": {
+    "proseWrap": "never"
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  }
+}

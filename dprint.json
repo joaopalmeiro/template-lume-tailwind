@@ -1,0 +1,8 @@
+{
+  "includes": [
+    "src/**/*.vto"
+  ],
+  "plugins": [
+    "https://plugins.dprint.dev/g-plane/markup_fmt-v0.11.0.wasm"
+  ]
+}

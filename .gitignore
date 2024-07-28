@@ -1,0 +1,7 @@
+.DS_Store
+
+# https://lume.land/docs/configuration/config-file/#dest
+_site/
+
+# https://github.com/cloudflare/workers-sdk/blob/wrangler%403.67.1/packages/wrangler/src/paths.ts#L84-L96
+.wrangler/
